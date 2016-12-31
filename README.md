@@ -54,10 +54,9 @@ If Postgres is **not** installed locally, you can setup a free instance as follo
 - set `config.databaseUrl` to your copied postgres url
 - don't forget to run `sequelize db:migrate` 
 
------PJ Notes--------------------------------------------------------------------------------------------------------------
+    PJ Notes
     Error: unable to resolve sequelize  - I had to google and then found 'npm install --save sequelize' worked adn allowed me to run sequalize db:migrate
-        Error: Now I have to install pg manually so I'm about to run npm install pg - which seemed to work **and is allowing me to run the database migrations
------PJ Notes--------------------------------------------------------------------------------------------------------------
+    Error: Now I have to install pg manually so I'm about to run npm install pg - which seemed to work **and is allowing me to run the database migrations
 
 Apply the database migrations:
 
@@ -66,41 +65,41 @@ Apply the database migrations:
 Copy over static assets:
 
     grunt collect_static
------PJ Notes--------------------------------------------------------------------------------------------------------------
+
+    PJ Notes
     
-grunt hasn't been installed locally yet
+    grunt hasn't been installed locally yet
 
-ran 'npm install grunt'
+    ran 'npm install grunt'
 
-then run
+    then run
 
-grunt collect_static- that still didn't work
- - npm install grunt-contrib-sass
- - npm install grunt-contrib-watch
- - grunt collect_static - still didn't work, so I'm manually installing the missing packages
- - npm install grunt-sass
- - npm install grunt-browserify
- - npm install uglify
- - npm install grunt-nodemon
- - npm install grunt-concurrent
- - npm install grunt-shell
+    grunt collect_static- that still didn't work
+     - npm install grunt-contrib-sass
+     - npm install grunt-contrib-watch
+     - grunt collect_static - still didn't work, so I'm manually installing the missing packages
+     - npm install grunt-sass
+     - npm install grunt-browserify
+     - npm install uglify
+     - npm install grunt-nodemon
+     - npm install grunt-concurrent
+     - npm install grunt-shell
 
 
-removed the browerify-shim from the transform array in the package.json
+    removed the browerify-shim from the transform array in the package.json
 
-ran grunt collect_static - cannot find the vue module
-ran npm install vue
-ran grunt collect_static - cannot find the director module
-ran npm install director
-ran grunt collect_static - cannot find the jquery module
-ran npm install jquery
+    ran grunt collect_static - cannot find the vue module
+    ran npm install vue
+    ran grunt collect_static - cannot find the director module
+    ran npm install director
+    ran grunt collect_static - cannot find the jquery module
+    ran npm install jquery
 
-ran grunt collect_static - public/app.js created
+    ran grunt collect_static - public/app.js created
 
-However Uglification failed
+    However Uglification failed
 
-Since they're just warnings and no errors - I'll try and run grunt
------PJ Notes--------------------------------------------------------------------------------------------------------------
+    Since they're just warnings and no errors - I'll try and run grunt
 
 ### Running the application
 
