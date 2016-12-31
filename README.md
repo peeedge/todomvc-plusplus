@@ -107,17 +107,20 @@ Since they're just warnings and no errors - I'll try and run grunt
 To run the application in development mode:
 
     grunt
------PJ Notes--------------------------------------------------------------------------------------------------------------
-When running grunt - Error: Cannot find module 'express'
-Ran npm install express
-When running grunt - Error: Cannot find module 'body-parser'
-Ran npm install body-parser
-When running grunt - Error: Cannot find module 'morgan'
-Ran npm install morgan
-When running grunt - Error: Cannot find module 'socket.io'
-Ran npm install socket.io
 
-Ran grunt for a final time and got the express server listening on port 3000
+-------------------------------------------------------------------------------------------------
+    PJ Notes
+    When running grunt - Error: Cannot find module 'express'
+    Ran npm install express
+    When running grunt - Error: Cannot find module 'body-parser'
+    Ran npm install body-parser
+    When running grunt - Error: Cannot find module 'morgan'
+    Ran npm install morgan
+    When running grunt - Error: Cannot find module 'socket.io'
+    Ran npm install socket.io
+
+    Ran grunt for a final time and got the express server listening on port 3000
+-------------------------------------------------------------------------------------------------
 
 Couldn't find module ejs
 Ran npm install ejs
