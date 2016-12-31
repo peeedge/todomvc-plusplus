@@ -52,16 +52,36 @@ If Postgres is **not** installed locally, you can setup a free instance as follo
 - goto "Details" and copy the url. It should look something like this [postgres://abcdefg:icRAC...](https://customer.elephantsql.com/instance)
 - in the project, copy `config/test.js` to `config/user.js`
 - set `config.databaseUrl` to your copied postgres url
-- don't forget to run `sequelize db:migrate`
+- don't forget to run `sequelize db:migrate` 
+
+-----PJ Notes--------------------------------------------------------------------------------------------------------------
+    Error: unable to resolve sequelize  - I had to google and then found 'npm install --save sequelize' worked adn allowed me to run sequalize db:migrate
+        Error: Now I have to install pg manually so I'm about to run npm install pg - which seemed to work **and is allowing me to run the database migrations
+-----PJ Notes--------------------------------------------------------------------------------------------------------------
 
 Apply the database migrations:
 
-    sequelize db:migrate
+    sequelize db:migrate 
     
 Copy over static assets:
 
     grunt collect_static
+-----PJ Notes--------------------------------------------------------------------------------------------------------------
     
+grunt hasn't been installed locally yet
+
+ran 'npm install grunt'
+
+then run
+
+grunt collect_static- that still didn't work
+ - npm install grunt-contrib-sass
+ - npm install grunt-contrib-watch
+ - grunt collect_static - still didn't work, so I'm manually installing the missing packages
+
+
+-----PJ Notes--------------------------------------------------------------------------------------------------------------
+
 ### Running the application
 
 To run the application in development mode:
