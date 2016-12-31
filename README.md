@@ -78,8 +78,28 @@ grunt collect_static- that still didn't work
  - npm install grunt-contrib-sass
  - npm install grunt-contrib-watch
  - grunt collect_static - still didn't work, so I'm manually installing the missing packages
+ - npm install grunt-sass
+ - npm install grunt-browserify
+ - npm install uglify
+ - npm install grunt-nodemon
+ - npm install grunt-concurrent
+ - npm install grunt-shell
 
 
+removed the browerify-shim from the transform array in the package.json
+
+ran grunt collect_static - cannot find the vue module
+ran npm install vue
+ran grunt collect_static - cannot find the director module
+ran npm install director
+ran grunt collect_static - cannot find the jquery module
+ran npm install jquery
+
+ran grunt collect_static - public/app.js created
+
+However Uglification failed
+
+Since they're just warnings and no errors - I'll try and run grunt
 -----PJ Notes--------------------------------------------------------------------------------------------------------------
 
 ### Running the application
@@ -87,6 +107,19 @@ grunt collect_static- that still didn't work
 To run the application in development mode:
 
     grunt
+-----PJ Notes--------------------------------------------------------------------------------------------------------------
+When running grunt - Error: Cannot find module 'express'
+Ran npm install express
+When running grunt - Error: Cannot find module 'body-parser'
+Ran npm install body-parser
+When running grunt - Error: Cannot find module 'morgan'
+Ran npm install morgan
+When running grunt - Error: Cannot find module 'socket.io'
+Ran npm install socket.io
+
+Ran grunt for a final time and got the express server listening on port 3000
+
+-----PJ Notes--------------------------------------------------------------------------------------------------------------
 
 To run the application simulating production settings:
 

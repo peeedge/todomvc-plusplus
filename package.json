@@ -57,16 +57,6 @@
   },
   "browserify": {
     "transform": [
-      "browserify-shim",
-      [
-        "babelify",
-        {
-          "presets": [
-            "es2015",
-            "es2016"
-          ]
-        }
-      ]
     ]
   },
   "browserify-shim": {
