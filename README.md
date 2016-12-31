@@ -119,6 +119,11 @@ Ran npm install socket.io
 
 Ran grunt for a final time and got the express server listening on port 3000
 
+Couldn't find module ejs
+Ran npm install ejs
+
+Ran grunt again and opened http://localhost:3000/ and the app loaded
+
 -----PJ Notes--------------------------------------------------------------------------------------------------------------
 
 To run the application simulating production settings:
