@@ -62,6 +62,10 @@ Copy over static assets:
 
     grunt collect_static
 
+Below is a list of missing dependencies. Running installDependencies.bat - will install all the missing dependencies below
+
+    installDependencies.bat 
+
     npm install --save sequelize
     npm install pg
     npm install grunt

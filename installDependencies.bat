@@ -1,0 +1,19 @@
+npm install --save sequelize
+npm install pg
+npm install grunt
+npm install grunt-contrib-sass
+npm install grunt-contrib-watch
+npm install grunt-sass
+npm install grunt-browserify
+npm install uglify
+npm install grunt-nodemon
+npm install grunt-concurrent
+npm install grunt-shell
+npm install vue
+npm install director
+npm install jquery
+npm install express
+npm install body-parser
+npm install morgan
+npm install socket.io
+npm install ejs
